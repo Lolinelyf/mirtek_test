@@ -1,0 +1,14 @@
+.droplist {
+	display: flex;
+	justify-content: space-between;
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__name {
+		color: #738f9d;
+		padding-right: 15px;
+	}
+}

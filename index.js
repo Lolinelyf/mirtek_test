@@ -1,29 +1,45 @@
-// import ApexCharts from "apexcharts";
+const selectDate = document.querySelector('.date');
+const selectDate_title = selectDate.querySelector('.date__title');
+const selectDate_labels = selectDate.querySelectorAll('.date__label');
 
-// var options = {
-//   chart: {
-//     type: 'line'
-//   },
-// 	colors: ["#FF1654", "#247BA0"],
-//   series: [
-//     {
-//       name: "Series A",
-//       data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6]
-//     },
-//     {
-//       name: "Series B",
-//       data: [20, 29, 37, 36, 44, 45, 50, 58, 22, 45, 15]
-//     }
-//   ],
+selectDate_title.addEventListener('click', () => {
+  if ('active' === selectDate.getAttribute('data-state')) {
+    selectDate.setAttribute('data-state', '');
+  } else {
+    selectDate.setAttribute('data-state', 'active');
+  }
+});
 
-//   xaxis: {
-//     categories: [30,05,6,7,8,9,10,11,12,13,14,15,16,17,18]
-//   },
-// 	stroke: {
-// 		curve: 'smooth',
-// 	}
-// }
+for (let i = 0; i < selectDate_labels.length; i++) {
+  selectDate_labels[i].addEventListener('click', (evt) => {
+    selectDate_title.textContent = evt.target.textContent;
+    selectDate.setAttribute('data-state', '');
+  });
+};
 
-// var chart = new ApexCharts(document.querySelector("#chart"), options);
 
-// chart.render();
+const selectTl = document.querySelector('.timeline');
+const selectTl_title = selectTl.querySelector('.timeline__title');
+const selectTl_labels = selectTl.querySelectorAll('.timeline__label');
+
+selectTl_title.addEventListener('click', () => {
+  if ('active' === selectTl.getAttribute('data-state')) {
+    selectTl.setAttribute('data-state', '');
+  } else {
+    selectTl.setAttribute('data-state', 'active');
+  }
+});
+
+for (let i = 0; i < selectTl_labels.length; i++) {
+  selectTl_labels[i].addEventListener('click', (evt) => {
+    selectTl_title.textContent = evt.target.textContent;
+    selectTl.setAttribute('data-state', '');
+  });
+};
+
+const menuBtn = document.querySelector('.menu');
+const menu = document.querySelector('.navigation');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('view')
+});

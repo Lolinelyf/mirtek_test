@@ -1,10 +1,14 @@
 .navigation {
-	display: none;
+	transform: translateX(-270px);
+	grid-area: 2 / 1 / 3 / 2;
+	min-height: calc(100vh - 70px);
+	min-width: 250px;
+	background-color: #33474f;
+	transition: 1s;
 
 	@media (min-width: $tablet-size-land) {
-		display: block;
-		grid-area: 2 / 1 / 3 / 2;
-		background-color: #33474f;
+		transform: translateX(0);
+		
 	}
 
 	&__tab {
@@ -14,13 +18,29 @@
 		padding: 25px 0;
 		color: #fff;
 		cursor: pointer;
+		filter: brightness(.8);
+		transition: .15s;
+
+		&:hover {
+			filter: brightness(1);
+			background-color: #405a65;
+		}
 
 		&--home {
 			background-color: #ed448f;
+			filter: brightness(1);
+
+			&:hover {
+				background-color: #ff0073;
+			}
 		}
 	}
 
 	&__icon {
 		padding: 0 15px;
 	}
+}
+
+.view {
+	transform: translateX(0);
 }

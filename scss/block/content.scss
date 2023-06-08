@@ -1,8 +1,16 @@
 .content {
 	padding: 70px;
-	
-	&__text {
-		padding: 30px;
+
+	&__line {
+		height: 2px;
+		background-color: #dde2e7;
+		margin: 15px 0;
+	}
+
+	&__column{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 }
 

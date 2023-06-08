@@ -31,8 +31,10 @@
 	</header>
 
 	<nav class="navigation">
-		<a class="navigation__tab navigation__tab--home"><img class="navigation__icon" src="/images/icons/home.svg" alt="home">Home</a>
-		<a class="navigation__tab"><img class="navigation__icon" src="/images/icons/clock.svg" alt="home">Time Management</a>
+		<a class="navigation__tab navigation__tab--home"><img class="navigation__icon" src="/images/icons/home.svg"
+				alt="home">Home</a>
+		<a class="navigation__tab"><img class="navigation__icon" src="/images/icons/clock.svg" alt="home">Time
+			Management</a>
 		<a class="navigation__tab"><img class="navigation__icon" src="/images/icons/box.svg" alt="home">Inbox</a>
 		<a class="navigation__tab"><img class="navigation__icon" src="/images/icons/calendar.svg" alt="home">Calendar</a>
 		<a class="navigation__tab"><img class="navigation__icon" src="/images/icons/statistic.svg" alt="home">Analytics</a>
@@ -42,21 +44,122 @@
 	<main class="main">
 
 		<div class="content">
-			<section сlass="content__text">
-				<h2 class="content__text--title">Hi Filip,</h2>
-				<p>Checkout your latest projects and their progress.</p>
+
+			<section class="text">
+				<h2 class="text__title">Hi Filip,</h2>
+				<p class="text__subtitle">Chenckout your latest projects and their progress.</p>
 			</section>
 
-			<div class="card" style="background-color: red; padding: 15px">
-				<h2 class="card__title">Wawy Lines, Working Hours и THIS WEEK.</h2>
+			<hr class="content__line">
+
+			<div class="card">
+				<header class="card__header">
+					<section class="card__text">
+						<h2 class="card__title">Wawy Lines</h2>
+						<p class="card__subtitle">Working Hours</p>
+					</section>
+					<form>
+						<div class="select date" data-state="">
+							<div class="select__title date__title"></div>
+							<div class="select__content select__content--uppercase">
+								<input id="selectOne" class="select__input" type="radio" name="singleSelect" checked />
+								<label for="selectOne" tabindex="0" class="select__label date__label" data-value="this week"></label>
+								<input id="SelectTwo" class="select__input" type="radio" name="singleSelect" />
+								<label for="SelectTwo" tabindex="0" class="select__label date__label" data-value="last week"></label>
+							</div>
+						</div>
+					</form>
+				</header>
 				<div style="height:400px; background:#ccc;"></div>
 			</div>
 
-			<section сlass="content__text">
-				<h2 class="content__text--title">Hi Filip,</h2>
-				<p>Checkout your latest projects and their progress.</p>
+
+
+
+			<div class="droplist">
+				<section class="droplist__text">
+					<h2 class="text__title">Hi Filip,</h2>
+					<p class="text__subtitle">Checkout your latest projects and their progress.</p>
+				</section>
+				<div class="droplist__container">
+					<p class="droplist__name">Timeline:</p>
+					<form>
+						<div class="select timeline select--timeline" data-state="">
+							<div class="select__title timeline__title"></div>
+							<div class="select__content">
+								<input id="selectOne" class="select__input" type="radio" name="singleSelect" checked />
+								<label for="selectOne" tabindex="0" class="select__label timeline__label" data-value="7 days"></label>
+								<input id="SelectTwo" class="select__input" type="radio" name="singleSelect" />
+								<label for="SelectTwo" tabindex="0" class="select__label timeline__label" data-value="28 days"></label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<hr class="content__line">
+
+			<div class="content__column">
+				<div class="card card__column--one">
+					<div style="height:400px; width: 500px; background:#ccc;"></div>
+				</div>
+				<div class="card card__column--two">
+					<div style="height:400px; width: 900px; background:#ccc;"></div>
+				</div>
+			</div>
+
+			<section class="text">
+				<h2 class="text__title">Hi Filip,</h2>
+				<p class="text__subtitle">Chenckout your latest projects and their progress.</p>
 			</section>
+
+			<hr class="content__line">
 			
+			<div class="card">
+				<div style="height:100px; width: 100%; background:#ccc;"></div>
+			</div>
+			<div class="card">
+				<div style="height:100px; width: 100%; background:#ccc;"></div>
+			</div>
+			<div class="card">
+				<div style="height:100px; width: 100%; background:#ccc;"></div>
+			</div>
+			<div class="card">
+				<div style="height:100px; width: 100%; background:#ccc;"></div>
+			</div>
+
+			<div class="droplist">
+				<section class="droplist__text">
+					<h2 class="text__title">Hi Filip,</h2>
+					<p class="text__subtitle">Checkout your latest projects and their progress.</p>
+				</section>
+				<div class="droplist__container">
+					<p class="droplist__name">Timeline:</p>
+					<form>
+						<div class="select timeline select--timeline" data-state="">
+							<div class="select__title timeline__title"></div>
+							<div class="select__content">
+								<input id="selectOne" class="select__input" type="radio" name="singleSelect" checked />
+								<label for="selectOne" tabindex="0" class="select__label timeline__label" data-value="7 days"></label>
+								<input id="SelectTwo" class="select__input" type="radio" name="singleSelect" />
+								<label for="SelectTwo" tabindex="0" class="select__label timeline__label" data-value="28 days"></label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<hr class="content__line">
+			<div class="content__column">
+			<div class="card">
+				<div style="height:500px; width: 450px; background:#ccc;"></div>
+			</div>
+			<div class="card">
+				<div style="height:500px; width: 450px; background:#ccc;"></div>
+			</div>
+			<div class="card">
+				<div style="height:500px; width: 450px; background:#ccc;"></div>
+			</div>
+			</div>
 
 		</div>
 
