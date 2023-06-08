@@ -1,0 +1,20 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "start": "vite --open",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-config-google": "^0.14.0",
+    "sass": "^1.55.0",
+    "vite": "^3.1.3"
+  },
+  "dependencies": {
+    "apexcharts": "^3.41.0",
+    "swiper": "^8.4.2"
+  }
+}

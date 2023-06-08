@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="/index.scss">
+</head>
+
+<body class="grid">
+
+	<header class="header">
+		<button class="menu"></button>
+		<h1 class="header__brand">@just<span class="header__brand--bold">Free</span></h1>
+
+		<div class="navbar">
+			<form class="search">
+				<button class="search__submit" type="submit" name="submit"></button>
+				<input class="search__text" type="text" name="text" placeholder="Search">
+			</form>
+
+			<div class="user">
+				<img src="/images/icons/notice.svg" alt="notice" class="user__notice">
+				<p class="user__name">Filip J.</p>
+				<p class="user__avatar">F</p>
+			</div>
+		</div>
+
+	</header>
+
+	<nav class="navigation">
+		<a class="navigation__tab navigation__tab--home"><img class="navigation__icon" src="/images/icons/home.svg" alt="home">Home</a>
+		<a class="navigation__tab"><img class="navigation__icon" src="/images/icons/clock.svg" alt="home">Time Management</a>
+		<a class="navigation__tab"><img class="navigation__icon" src="/images/icons/box.svg" alt="home">Inbox</a>
+		<a class="navigation__tab"><img class="navigation__icon" src="/images/icons/calendar.svg" alt="home">Calendar</a>
+		<a class="navigation__tab"><img class="navigation__icon" src="/images/icons/statistic.svg" alt="home">Analytics</a>
+		<a class="navigation__tab"><img class="navigation__icon" src="/images/icons/setting.svg" alt="home">Settings</a>
+	</nav>
+
+	<main class="main">
+
+		<div class="content">
+			<section сlass="content__text">
+				<h2 class="content__text--title">Hi Filip,</h2>
+				<p>Checkout your latest projects and their progress.</p>
+			</section>
+
+			<div class="card" style="background-color: red; padding: 15px">
+				<h2 class="card__title">Wawy Lines, Working Hours и THIS WEEK.</h2>
+				<div style="height:400px; background:#ccc;"></div>
+			</div>
+
+			<section сlass="content__text">
+				<h2 class="content__text--title">Hi Filip,</h2>
+				<p>Checkout your latest projects and their progress.</p>
+			</section>
+			
+
+		</div>
+
+	</main>
+
+	<script src="index.js"></script>
+
+
+</body>
+
+</html>
