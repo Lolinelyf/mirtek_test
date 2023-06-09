@@ -265,9 +265,17 @@ for (let i = 0; i < selectTl_labels.length; i++) {
   });
 };
 
-const menuBtn = document.querySelector('.menu');
+
+
+
+
+
+
+const menuConteiner = document.querySelector('.menu');
+const menuBtn = document.querySelector('.menu__btn')
 const menu = document.querySelector('.navigation');
 
-menuBtn.addEventListener('click', () => {
-  menu.classList.toggle('view')
+menuConteiner.addEventListener('click', () => {
+  menu.classList.toggle('view');
+	menuBtn.classList.toggle('rotate');
 });
