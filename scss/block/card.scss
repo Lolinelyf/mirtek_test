@@ -30,9 +30,12 @@
 
 	&__row {
 		display: grid;
-		grid-template-columns: 1fr 2fr;
-		grid-template-rows: 100px;
-		height: 130px;
+		grid-template-columns: 1fr;
+		height: auto;
+
+		@media (min-width: $desktop-size-average) {	
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 
 	&__person {
@@ -58,14 +61,21 @@
 
 	&__header--row {
 		display: flex;
-		grid-area: 1 / 1 / 1 / 2;
+		grid-area: 1 / 1 / 2 / 2;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (min-width: $desktop-size-average) {	
+			grid-area: 1 / 1 / 2 / 2;
+			justify-content: flex-start;
+		}		
 	}
 
 	&__title {
 		font-size: 18px;
 
 		@media (min-width: $tablet-size-port) {	
-			font-size: 22px;
+			font-size: 20px;
 		}
 	}
 
@@ -74,8 +84,25 @@
 		font-size: 14px;
 
 		@media (min-width: $tablet-size-port) {	
-			font-size: 22px;
+			font-size: 18px;
 		}
+	}
+
+	&__photo {
+		width: 70px; 
+		height: 70px; 
+		background-color: #7e8e9f; 
+		margin-right: 15px;
+
+		@media (min-width: $desktop-size-average) {	
+			width: 100px; 
+			height: 100px; 
+		}
+	}
+
+	&__timeupdate {
+		font-size: 14px;
+		padding: 0 15px;
 	}
 }
 
