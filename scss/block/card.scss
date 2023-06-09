@@ -2,6 +2,39 @@
 	background-color: #fff;
 	padding: 15px;
 	margin: 15px 0;
+	height: 500px;
+
+
+	&__column--one {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		
+		@media (min-width: $mobile-size-land) {
+			width: 36%;
+		}
+	}
+
+	&__column--two {
+		width: 100%;
+
+		@media (min-width: $mobile-size-land) {
+			width: 62%;
+		}
+	}
+
+	&__row {
+		height: 150px;
+	}
+
+	&__person {
+		width: 400px;
+
+		@media (min-width: $desktop-size-average) {
+			width: 32%;
+		}
+	}
 
 	&__header {
 		display: flex;
@@ -25,7 +58,34 @@
 	}
 }
 
+.test {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 #chart {
+	display: block;
   width: 100%;
-  margin: 35px auto;
+}
+
+#workhour {
+	width: 100%;
+	height: 32%;
+	// padding: 15px 0;
+}
+
+#dailyprogress {
+	width: 100%;
+	height: 100%;
+}
+
+#projecttitle {
+	width: 100%;
+	height: 100%;
+}
+
+#clienhour, #person, #totaloverdue {
+	height: 100%;
+	width: 100%;
 }

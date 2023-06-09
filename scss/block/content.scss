@@ -1,5 +1,9 @@
 .content {
-	padding: 70px;
+	padding: 20px;
+
+	@media (min-width: $tablet-size-land) {
+		padding: 70px;
+	}
 
 	&__line {
 		height: 2px;
@@ -7,10 +11,26 @@
 		margin: 15px 0;
 	}
 
-	&__column{
+	&__column {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+
+		@media (min-width: $mobile-size-land) {
+			justify-content: space-between;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+			
+	}
+
+	&__person {
+		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
+
+		@media (min-width: $tablet-size-land) {
+			justify-content: space-between;
+		}
 	}
 }
 

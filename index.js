@@ -12,7 +12,7 @@ var options = {
 			},
 			"foreColor": "#373D3F",
 			"fontFamily": "Roboto",
-			"height": 250,
+			"height": "80%",
 			"id": "YXRET",
 			"toolbar": {
 					"show": false,
@@ -26,7 +26,7 @@ var options = {
 					}
 			},
 			"type": "area",
-			"width": 480
+			"width": "100%"
 	},
 	"plotOptions": {
 			"bar": {

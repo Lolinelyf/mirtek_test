@@ -7,8 +7,7 @@
 	transition: 1s;
 
 	@media (min-width: $tablet-size-land) {
-		transform: translateX(0);
-		
+		transform: translateX(0);	
 	}
 
 	&__tab {
@@ -43,4 +42,5 @@
 
 .view {
 	transform: translateX(0);
+	z-index: 1;
 }
