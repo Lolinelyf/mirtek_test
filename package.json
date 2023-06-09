@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "vite --open",
-    "build": "vite build"
+		"build": "vite build —base=/mirtek_test/"
   },
   "devDependencies": {
     "eslint": "^8.24.0",
