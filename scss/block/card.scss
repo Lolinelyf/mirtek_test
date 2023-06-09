@@ -2,7 +2,11 @@
 	background-color: #fff;
 	padding: 15px;
 	margin: 15px 0;
-	height: 500px;
+	height: 350px;
+
+	@media (min-width: $tablet-size-port) {
+		height: 500px;
+	}
 
 
 	&__column--one {
@@ -25,12 +29,19 @@
 	}
 
 	&__row {
-		height: 150px;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: 100px;
+		height: 130px;
 	}
 
 	&__person {
 		width: 32%;
-		height: 320px;
+		height: 280px;
+
+		@media (min-width: $tablet-size-port) {
+			height: 320px;
+		}
 
 		@media (min-width: $desktop-size-average) {
 			height: 500px;
@@ -38,15 +49,16 @@
 	}
 
 	&__header {
+		height: 65px;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		color: #33474f;
 	}
 
-	&__header {
+	&__header--row {
 		display: flex;
-		align-items: center;
-		padding: 15px 0;
+		grid-area: 1 / 1 / 1 / 2;
 	}
 
 	&__title {
@@ -69,8 +81,11 @@
 
 .test {
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	height: calc(100% - 65px);
+
+	&_x {
+		height: 100%;
+	}
 }
 
 #chart {
@@ -81,7 +96,7 @@
 #workhour {
 	width: 100%;
 	height: 32%;
-	// padding: 15px 0;
+
 }
 
 #dailyprogress {
@@ -90,7 +105,7 @@
 }
 
 #projecttitle {
-	width: 100%;
+	// width: 100%;
 	height: 100%;
 }
 

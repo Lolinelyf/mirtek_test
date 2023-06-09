@@ -24,7 +24,9 @@
 			<div class="user">
 				<img src="/images/icons/notice.svg" alt="notice" class="user__notice">
 				<p class="user__name">Filip J.</p>
-				<a class="user__avatar"><p class="user__nik">F</p></a>
+				<a class="user__avatar">
+					<p class="user__nik">F</p>
+				</a>
 			</div>
 		</div>
 
@@ -75,8 +77,8 @@
 
 			<div class="droplist">
 				<section class="droplist__text">
-					<h2 class="text__title">Hi Filip,</h2>
-					<p class="text__subtitle">Checkout your latest projects and their progress.</p>
+					<h2 class="text__title">Crunch some Numbers</h2>
+					<p class="text__subtitle">See how your projects are progressing via the new statistics engine.</p>
 				</section>
 				<div class="droplist__container">
 					<p class="droplist__name">Timeline:</p>
@@ -97,39 +99,139 @@
 
 			<div class="content__column">
 				<div class="card card__column--one">
-					<div id="workhour"><img class="test" src="/images/1.jpg" alt=""></div>
-					<div id="workhour"><img class="test" src="/images/1.jpg" alt=""></div>
-					<div id="workhour"><img class="test" src="/images/1.jpg" alt=""></div>
+					<div id="workhour"><img class="test test_x" src="/images/1.jpg" alt=""></div>
+					<div id="workhour"><img class="test test_x" src="/images/1.jpg" alt=""></div>
+					<div id="workhour"><img class="test test_x" src="/images/1.jpg" alt=""></div>
 				</div>
 				<div class="card card__column--two">
+					<header class="card__header">
+						<section class="card__text">
+							<h2 class="card__title">Wawy Lines</h2>
+							<p class="card__subtitle">Working Hours</p>
+						</section>
+						<form>
+							<div class="select date" data-state="">
+								<div class="select__title date__title"></div>
+								<div class="select__content select__content--uppercase">
+									<input id="selectOne" class="select__input" type="radio" name="singleSelect" checked />
+									<label for="selectOne" tabindex="0" class="select__label date__label" data-value="this week"></label>
+									<input id="SelectTwo" class="select__input" type="radio" name="singleSelect" />
+									<label for="SelectTwo" tabindex="0" class="select__label date__label" data-value="last week"></label>
+								</div>
+							</div>
+						</form>
+					</header>
 					<div id="dailyprogress"><img class="test" src="/images/1.jpg" alt=""></div>
 				</div>
 			</div>
 
 			<section class="text">
-				<h2 class="text__title">Hi Filip,</h2>
-				<p class="text__subtitle">Chenckout your latest projects and their progress.</p>
+				<h2 class="text__title">Current Progress</h2>
+				<p class="text__subtitle">This table will show you how current projects are behaving</p>
 			</section>
 
 			<hr class="content__line">
-			
+
+
+
 			<div class="card card__row">
-				<div id="projecttitle"><img class="test" src="/images/1.jpg" alt=""></div>
+				<div class="card__header--row">
+					<div style="width: 100px; height: 100px; background-color: grey; margin-right: 15px;"></div>
+					<section class="text">
+						<h2 class="text__title">Project Title</h2>
+						<p class="text__subtitle">Design & Development</p>
+					</section>
+				</div>
+				<div class="currentprogress">
+					<p class="currentprogress__timeupdate">Last update Today at 4:24 AM</p>
+
+					<img src="/images/icons/clock.svg" style="fill:aqua;" alt="clock">
+					<p class="currentprogress__time">26:30</p>
+
+					<img src="/images/icons/message.svg" alt="message">
+					<p class="currentprogress__message">624</p>
+
+					<div id="projecttitle"><img style="width: 300px; height: 100px" src="/images/1.jpg" alt=""></div>
+
+				</div>
+
 			</div>
+
 			<div class="card card__row">
-				<div id="projecttitle"><img class="test" src="/images/1.jpg" alt=""></div>
+				<div class="card__header--row">
+					<div style="width: 100px; height: 100px; background-color: grey; margin-right: 15px;"></div>
+					<section class="text">
+						<h2 class="text__title">Project Title</h2>
+						<p class="text__subtitle">Design & Development</p>
+					</section>
+				</div>
+				<div class="currentprogress">
+					<p class="currentprogress__timeupdate">Last update Today at 4:24 AM</p>
+
+					<img src="/images/icons/clock.svg" style="fill:aqua;" alt="clock">
+					<p class="currentprogress__time">26:30</p>
+
+					<img src="/images/icons/message.svg" alt="message">
+					<p class="currentprogress__message">624</p>
+
+					<div id="projecttitle"><img style="width: 300px; height: 100px" src="/images/1.jpg" alt=""></div>
+
+				</div>
+
 			</div>
+
+
 			<div class="card card__row">
-				<div id="projecttitle"><img class="test" src="/images/1.jpg" alt=""></div>
+				<div class="card__header--row">
+					<div style="width: 100px; height: 100px; background-color: grey; margin-right: 15px;"></div>
+					<section class="text">
+						<h2 class="text__title">Project Title</h2>
+						<p class="text__subtitle">Design & Development</p>
+					</section>
+				</div>
+				<div class="currentprogress">
+					<p class="currentprogress__timeupdate">Last update Today at 4:24 AM</p>
+
+					<img src="/images/icons/clock.svg" style="fill:aqua;" alt="clock">
+					<p class="currentprogress__time">26:30</p>
+
+					<img src="/images/icons/message.svg" alt="message">
+					<p class="currentprogress__message">624</p>
+
+					<div id="projecttitle"><img style="width: 300px; height: 100px" src="/images/1.jpg" alt=""></div>
+
+				</div>
+
 			</div>
+
+
 			<div class="card card__row">
-				<div id="projecttitle"><img class="test" src="/images/1.jpg" alt=""></div>
+				<div class="card__header--row">
+					<div style="width: 100px; height: 100px; background-color: grey; margin-right: 15px;"></div>
+					<section class="text">
+						<h2 class="text__title">Project Title</h2>
+						<p class="text__subtitle">Design & Development</p>
+					</section>
+				</div>
+				<div class="currentprogress">
+					<p class="currentprogress__timeupdate">Last update Today at 4:24 AM</p>
+
+					<img src="/images/icons/clock.svg" style="fill:aqua;" alt="clock">
+					<p class="currentprogress__time">26:30</p>
+
+					<img src="/images/icons/message.svg" alt="message">
+					<p class="currentprogress__message">624</p>
+
+					<div id="projecttitle"><img style="width: 300px; height: 100px" src="/images/1.jpg" alt=""></div>
+
+				</div>
+
 			</div>
 
 			<div class="droplist">
 				<section class="droplist__text">
-					<h2 class="text__title">Hi Filip,</h2>
-					<p class="text__subtitle">Checkout your latest projects and their progress.</p>
+					<h2 class="text__title">Crunch some Numbers</h2>
+					<p class="text__subtitle">See how your projects are progressing via the new statistics engine.</p>
 				</section>
 				<div class="droplist__container">
 					<p class="droplist__name">Timeline:</p>
@@ -149,15 +251,23 @@
 
 			<hr class="content__line">
 			<div class="content__person">
-			<div class="card card__person">
-				<div id="clienhour"><img class="test" src="/images/1.jpg" alt=""></div>
-			</div>
-			<div class="card card__person">
-				<div id="person"><img class="test" src="/images/1.jpg" alt=""></div>
-			</div>
-			<div class="card card__person">
-				<div id="totaloverdue"><img class="test" src="/images/1.jpg" alt=""></div>
-			</div>
+				<div class="card card__person">
+					<section class="card__text">
+						<h2 class="card__title">Wawy Lines</h2>
+						<p class="card__subtitle">Working Hours</p>
+					</section>
+					<div id="clienhour"><img class="test" src="/images/1.jpg" alt=""></div>
+				</div>
+				<div class="card card__person">
+					<div id="person"><img class="test  test_x" src="/images/1.jpg" alt=""></div>
+				</div>
+				<div class="card card__person">
+					<section class="card__text">
+						<h2 class="card__title">Wawy Lines</h2>
+						<p class="card__subtitle">Working Hours</p>
+					</section>
+					<div id="totaloverdue"><img class="test" src="/images/1.jpg" alt=""></div>
+				</div>
 			</div>
 
 		</div>
