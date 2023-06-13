@@ -1,9 +1,9 @@
 .grid {
-	display: grid;
-	grid-template-columns: 1fr 6fr;
-	grid-template-rows: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 50px auto;
 
-	@media (min-width: $tablet-size-port) {	
-		grid-template-rows: 70px auto;
-	}
+  @media (min-width: $tablet-size-port) {
+    grid-template-rows: 70px auto;
+  }
 }

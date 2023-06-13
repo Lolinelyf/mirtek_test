@@ -1,41 +1,52 @@
 .content {
-	padding: 15px 20px;
+  padding: 15px 20px;
 
-	@media (min-width: $tablet-size-land) {
-		padding: 15px 70px;
-	}
+  @media (min-width: $tablet-size-land) {
+    padding: 15px 70px;
+  }
 
-	&__line {
-		height: 2px;
-		background-color: #dde2e7;
-		margin: 15px 0;
-	}
+  &__line {
+    height: 2px;
+    background-color: #dde2e7;
+    margin: 15px 0;
+  }
 
-	&__column {
-		display: flex;
-		flex-direction: column;
+  &__column {
+    display: flex;
+    flex-direction: column;
 
-		@media (min-width: $mobile-size-land) {
-			justify-content: space-between;
-			flex-direction: row;
-			flex-wrap: wrap;
-		}
-			
-	}
+    @media (min-width: $mobile-size-land) {
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
 
-	&__person {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
+  &__person {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 
-		@media (min-width: $tablet-size-land) {
-			justify-content: space-between;
-		}
-	}
+    & > *:first-child {
+      margin: 0;
+    }
+
+    & > *:not(:first-child) {
+      margin: 20px 0 0 0;
+
+      @media (min-width: $tablet-size-land) {
+        margin: 0 0 0 20px;
+      }
+    }
+
+    @media (min-width: $tablet-size-land) {
+      flex-direction: row;
+    }
+  }
 }
 
 #chart {
   width: 100%;
   margin: 0;
-	background-color: #fff;
+  background-color: #fff;
 }

@@ -1,21 +1,22 @@
 .currentprogress {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  grid-area: 2 / 1 / 3 / 2;
 
-	@media (min-width: $desktop-size-average) {	
-		grid-area: 1 / 2 / 2 / 3;
-	}
+  @media (min-width: $desktop-size-average) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
 
-	&__conteiner {
-		display: flex;
-		align-items: center;
-		padding: 0 5px;
-	}
+  &__conteiner {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+  }
 
-	&__message, &__time {
-		padding: 0 5px;
-	}
+  &__message,
+  &__time {
+    padding: 0 5px;
+  }
 }

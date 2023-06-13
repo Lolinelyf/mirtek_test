@@ -1,142 +1,131 @@
 .card {
-	background-color: #fff;
-	padding: 15px;
-	margin: 15px 0;
-	height: 350px;
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  height: 500px;
 
-	@media (min-width: $tablet-size-port) {
-		height: 500px;
-	}
+  &__text {
+    &--center {
+      text-align: center;
+    }
+  }
 
 
-	&__column--one {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		width: 100%;
-		
-		@media (min-width: $mobile-size-land) {
-			width: 36%;
-		}
-	}
+  &__column--one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 
-	&__column--two {
-		width: 100%;
+    @media (min-width: $mobile-size-land) {
+      width: 36%;
+    }
 
-		@media (min-width: $mobile-size-land) {
-			width: 62%;
-		}
-	}
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
 
-	&__row {
-		display: grid;
-		grid-template-columns: 1fr;
-		height: auto;
+  &__column--two {
+    width: 100%;
 
-		@media (min-width: $desktop-size-average) {	
-			grid-template-columns: 1fr 1fr;
-		}
-	}
+    @media (min-width: $mobile-size-land) {
+      width: 62%;
+    }
+  }
 
-	&__person {
-		width: 32%;
-		height: 280px;
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
 
-		@media (min-width: $tablet-size-port) {
-			height: 320px;
-		}
+    @media (min-width: $desktop-size-average) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 
-		@media (min-width: $desktop-size-average) {
-			height: 500px;
-		}
-	}
+  &__person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin: 15px 0;
 
-	&__header {
-		height: 65px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		color: #33474f;
-	}
+    &-flex {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 15px 0;
 
-	&__header--row {
-		display: flex;
-		grid-area: 1 / 1 / 2 / 2;
-		align-items: center;
-		justify-content: space-between;
+      &--left, &--right {
+        display: flex; 
+        justify-content: space-between;
+        padding: 15px;
+      }
+    }
 
-		@media (min-width: $desktop-size-average) {	
-			grid-area: 1 / 1 / 2 / 2;
-			justify-content: flex-start;
-		}		
-	}
+    &-title {
+      color: #df468e;
+      font-size: 16px;
+      border-bottom: 1px solid #df468e;
+    }
+  }
 
-	&__title {
-		font-size: 18px;
+  &__header {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #33474f;
+  }
 
-		@media (min-width: $tablet-size-port) {	
-			font-size: 20px;
-		}
-	}
+  &__header--row {
+    display: flex;
+    grid-area: 1 / 1 / 2 / 2;
+    align-items: center;
+    justify-content: space-between;
 
-	&__subtitle {
-		color: #738f9d;
-		font-size: 14px;
+    @media (min-width: $desktop-size-average) {
+      grid-area: 1 / 1 / 2 / 2;
+      justify-content: flex-start;
+    }
+  }
 
-		@media (min-width: $tablet-size-port) {	
-			font-size: 18px;
-		}
-	}
+  &__title {
+    font-size: 18px;
 
-	&__photo {
-		width: 70px; 
-		height: 70px; 
-		background-color: #7e8e9f; 
-		margin-right: 15px;
+    @media (min-width: $tablet-size-port) {
+      font-size: 20px;
+    }
+  }
 
-		@media (min-width: $desktop-size-average) {	
-			width: 100px; 
-			height: 100px; 
-		}
-	}
+  &__subtitle {
+    color: #738f9d;
+    font-size: 14px;
 
-	&__timeupdate {
-		font-size: 14px;
-		padding: 0 15px;
-	}
-}
+    @media (min-width: $tablet-size-port) {
+      font-size: 18px;
+    }
+  }
 
-.test {
-	width: 100%;
-	height: calc(100% - 65px);
+  &__photo {
+    width: 70px;
+    height: 70px;
+    background-color: #7e8e9f;
+    margin-right: 15px;
 
-	&_x {
-		height: 100%;
-	}
-}
+    @media (min-width: $desktop-size-average) {
+      width: 100px;
+      height: 100px;
+    }
+  }
 
-#chart {
-	display: block;
-  width: 100%;
-}
-
-#workhour {
-	width: 100%;
-	height: 32%;
-
-}
-
-#dailyprogress {
-	width: 100%;
-	height: 100%;
-}
-
-#projecttitle {
-	// width: 100%;
-	height: 100%;
-}
-
-#clienhour, #person, #totaloverdue {
-	height: 100%;
-	width: 100%;
+  &__timeupdate {
+    font-size: 14px;
+    padding: 0 15px;
+  }
 }

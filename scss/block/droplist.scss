@@ -1,19 +1,19 @@
 .droplist {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-	&__container {
-		display: flex;
-		align-items: center;
-	}
+  &__container {
+    display: flex;
+    align-items: center;
+  }
 
-	&__name {
-		color: #738f9d;
-		padding-right: 15px;
-		font-size: 14px;
+  &__name {
+    color: #738f9d;
+    padding-right: 15px;
+    font-size: 14px;
 
-		@media (min-width: $tablet-size-port) {	
-			font-size: 16px;
-		}
-	}
+    @media (min-width: $tablet-size-port) {
+      font-size: 16px;
+    }
+  }
 }
